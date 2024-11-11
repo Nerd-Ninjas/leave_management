@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Welcome - Login Page</title>
     <style>
+        /* Global styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -14,31 +21,59 @@
             background-color: #f4f6f9;
             margin: 0;
         }
+
+        /* Centered container */
         .button-container {
             text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
         }
+
+        /* Welcome message styling */
+        .button-container h1 {
+            font-size: 24px;
+            color: #1d3557;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
         .login-button {
             display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
             font-size: 16px;
             color: #fff;
             background-color: #1d3557;
             border: none;
             border-radius: 5px;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
         }
+
         .login-button:hover {
             background-color: #457b9d;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
         }
     </style>
 </head>
 <body>
     <div class="button-container">
-        <h1>Welcome to the Login Page</h1>
+        <h1>Welcome! Please Select Your Login</h1>
         <a href="index.html" class="login-button">Student Login</a>
         <a href="index1.html" class="login-button">Teacher Login</a>
+        <div class="footer-text">Access your portal with ease</div>
     </div>
 </body>
 </html>
